@@ -41,6 +41,11 @@ document.querySelector(".pbtm").addEventListener("click", function(details) {
     makeBubble()
     getNewHit()
   }
+else if(clickednum != hitrn){
+  clearInterval()
+  document.querySelector(".pbtm").innerHTML = `<h1>Sorry You pressed the wrong bubble <br> Game is Over</h1> `
+
+}
 });
 
 runTimer();
